@@ -1,103 +1,224 @@
-body {
-    background-color: white;
-    font-family: 'karla', sans-serif;
-    
+@font-face {
+  font-family: "Karla-Bold";
+  src: url('fonts/Karla-Bold.eot');
+  src: url('fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla-Bold.woff') format('woff'),
+         url('fonts/Karla-Bold.ttf') format('truetype'),
+         url('fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-.header-content {
-        height:500px
-        background-image: url()images/kayak-bkgd.jpg')
-        background-size: cover;
-.container {
-   width: 1140px
-  margin: auto;
+
+@font-face {
+  font-family: "Dog";
+  src: url('fonts/Pacifico.ttf');
+  src: url('fonts/Pacifico.ttf?#iefix') format('embedded-opentype'),
+         url('fonts/Pacifico.woff') format('woff'),
+         url('fonts/Pacifico.ttf') format('truetype'),
+         url('fonts/Pacifico.svg#Pacifico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'karla-bolditalic';
+  src: url('fonts/Karla-BoldItalic.eot');
+  src: url('fonts/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Karla-BoldItalic.woff') format('woff'),
+       url('fonts/Karla-BoldItalic.ttf') format('truetype'),
+       url('fonts/Karla-BoldItalic.svg#karla-bolditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karla-italic';
+  src: url('fonts/Karla-Italic.eot');
+  src: url('fonts/Karla-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Karla-Italic.woff') format('woff'),
+       url('fonts/Karla-Italic.ttf') format('truetype'),
+       url('fonts/Karla-Italic.svg#karla-italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karla-regular';
+  src: url('fonts/Karla-Regular.eot');
+  src: url('fonts/Karla-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Karla-Regular.woff') format('woff'),
+       url('fonts/Karla-Regular.ttf') format('truetype'),
+       url('fonts/Karla-Regular.svg#karla-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #ccc;
+  font-family: 'Karla-Bold', sans-serif;
+}
+
+article {
   background-color: white;
 }
 
-nav {
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom:0px;
-}
-    nav ul {
-        list-style: none;
-        text-align: right;
-    }
-    
-    nav ul li {
-     display:incline;
-     padding:8px
-    }
-    
-    .header-content {
-        background-image: url()images/kayak-bkgd.jpg')
-
-    }
-.hero {
-    background-image: url(image/kayak-bkgd.jpg);
-    background-repeat:no-repeat
-    background-position:center;
-    bakcground-color:blue;
-  color:white;
-  text-allign: center;
-  padding: 50px;
-}
-
-    .hero p{
-        color:white
-    }
-
-    .hero h2{
-        color:white;
-    }
-
-    .hero h4{
-        background-color:rgba(0,0,0,0.5);
-        display: inline-block;
-        padding: 5px;
-    }
-    .hero p {
-        text-transform: uppercase;
-     }
-
 h1 {
-    font-family: 'pacificio', cursive, serif;
-    
+  font-family: 'pacifico', cursive, serif;
+  font-size: 100px;
 }
 
 h2 {
-    text-align: center;
-    color: #646464
+  font-family: 'pacifico', cursive, serif;
+  font-size: 50px;
+  text-align: center;
+  color: #646464;
 }
+
 p {
-    font-size:16px;
-    color: #2d2d2d;
-    
+  font-size: 16px;
+  color: #2d2d2d;
 }
 
 button {
-    background-color: #e2574c;
-    color:white;
-    border: none;
-    padding: 10px;
-    border-radius: 50px;
+  background-color: #e2574c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+button:hover {
+  background-color: #b64036;
 }
 
-    button:hover {
-        background-color: #b64036;
-    }
 a {
-    color: #e2574c;
+  color: #e2574c;
 }
-
 a:hover {
-    color: #b64036;
+  color: #b64036;
 }
 
-footer {
-    background-color: rgb(36,36,36);
+.container {
+  max-width: 1144px;
+  margin: auto;
 }
-    footer p {
-        color:white;
-    
+
+nav {
+  width: 100%
+  max-width: 1144px;
+  position: fixed;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+}
+  nav img{
+    height: 46px;
+    padding-left: 24px
+  } 
+  nav ul {
+    list-style-type: none;
+    padding-right: 24px
+  }
+    nav ul li {
+      display: inline;
     }
+
+.hero {
+    background-position: center;
+    background-size: cover;
+    background-color: #caefeb;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./images/girl-in-kayak.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  color: white;
+  text-align: center;
+  padding: 50px 24px 50px 24px;
+}
+  .hero p {
+    text-transform: uppercase;
+    color: white;
+  }
+  .hero h2 {
+    color: white;
+  }
+  .hero h4 {
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 5px;
+  }
+  .hero p {
+    text-transform: uppercase;
+  }
+
+article {
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Dog', cursive, serif;
+  font-size: 100px
+}
+
+h2 {
+  font-family: "Dog", cursive, serif;
+  font-size: 50px;
+  text-align: center;
+  color: #646464;
+}
+
+p {
+  font-size: 16px;
+  color: #2d2d2d;
+}
+
+button {
+  background-color: #e2574c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+  button:hover {
+    background-color: #b64036;
+  }
+
+a {
+  color: #e2574c;
+}
+  a:hover {
+    color: #b64036;
+  }
+
+.gallery {
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+  *** max-width: 1096px; */
+  margin: auto;
+}
+  .gallery img{
+    max-width: 32%;
+    height: auto;
+    flex: 1;
+  }
+footer {
+  background-color: rgb(36,36,36);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+  footer p {
+    color: white;
+  }
+
+footer ul {
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
